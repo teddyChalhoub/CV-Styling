@@ -246,5 +246,51 @@ img {
     content: "";
 }
 
+@media(max-width:1174px){
+
+    img{
+        display: none;
+    }
+
+    #competencies,#education,#experiences,#hobbies{
+        display: block;
+    }
+
+    .skills-primary,.skills-secondary{
+      
+        grid-template-columns: 33.5% 33% 33.5%;
+       
+     }
+
+
+    .content h3{
+        display: flex;
+        justify-content: flex-start;
+        max-width:7rem;
+        height: fit-content;
+        border-bottom: 0.1rem #000 solid;
+        border-right:0;
+    }
+
+    .contacts{
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+
+
+    }
+
+    .contact-github{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+    .contact-facebook{
+        grid-column:1/2;
+    }
+
+
+
+}
+
 
 
