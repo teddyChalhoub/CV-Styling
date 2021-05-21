@@ -172,3 +172,39 @@ header hgroup{
 .experience-date-separator{
     color:#F34423;
 }
+
+@media(max-width:964px){
+  
+    #contact{
+        position: relative;
+        display: block;
+        width: 100%;
+        height: fit-content;
+    }
+
+    #contact h3{
+        display: block;
+    }
+
+
+    .contact{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width:100%;
+
+    }
+
+    .contact-value{
+        background-color:#fff;
+    }
+
+    .content{
+        display: block;
+    }
+    
+    header div{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 2rem;
+    }
+}
