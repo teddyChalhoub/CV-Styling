@@ -1,0 +1,174 @@
+body{
+    
+    width:100vw;
+    max-width: 100%;
+    margin: auto;
+}
+
+header div{
+    
+   background-color: #999999;
+   display: flex;
+   flex-direction: row;
+   padding-left: 10rem;
+}
+
+header hgroup{
+    color: #F34423;
+}
+
+#contact h3{
+    display: none;
+}
+
+#contact{
+    position: absolute;
+    width: 80%; 
+    top:1rem;
+    right: 0;
+}
+
+.contact{
+    display: grid;
+    justify-content: flex-end;
+    grid-template-columns: 15% 35%;
+    margin: 0;
+    line-height: 0.7rem;
+}
+
+.contact-type{
+    background-color:#F34423 ;
+    color: #FBD6D7;
+    padding: 0.3rem;
+       
+}
+
+.contact-value{
+    background-color: black ;
+    margin:0;
+    padding: 0.3rem;
+
+}
+
+.contact-value a{
+  
+    color: #F34423;
+    text-decoration: none;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    max-width: 80%;
+    margin: auto;
+}
+
+.content h3{
+    padding-bottom: 0.6rem;
+    border-bottom: 0.01rem #CCCCCC solid;
+
+}
+
+.content p{
+    max-width: 95%;
+}
+
+.skills-primary::before{
+    content:"Main";
+}
+
+.skills-secondary::before{
+    content:"Other";
+}
+
+.skills-secondary span{
+    background-color: rgb(255, 0, 0,0.5);
+}
+
+.content h3::before{
+   content:'.';
+   color: #F34423;
+   font-size:7rem;
+   line-height: 0;
+}
+
+.skills-primary{
+    margin-bottom: 1rem;
+}
+
+.skill{
+    
+    background-color: #CCCCCC;
+    padding:0.3rem;
+    margin:0.3rem;
+    color:#FFFFFF;
+}
+
+.skill span{
+    display: inline-block;
+    padding:0.5rem 0;
+}
+
+.skills-primary .skill:first-child span{
+    
+    background-color: #F34423;
+    width:50%;
+}
+
+.skills-primary .skill:nth-child(2) span{
+    background-color: #F34423;
+    width:30%;
+}
+
+.skills-primary .skill:last-child span{
+    background-color: #F34423;
+    width:10%;
+}
+
+.skills-secondary .skill:first-child span{
+
+    width:90%;
+}
+
+.skills-secondary .skill:nth-child(2) span{
+
+    width:50%;
+}
+
+.skills-secondary .skill:last-child span{
+
+    width:70%;
+}
+
+.experience-institution::before{
+    content:"@";
+}
+
+.experience h4{
+    color:#F34423;
+}
+
+.experience-location::before{
+    content:"in";
+    margin:0.01rem;
+}
+
+.experience-location::after{
+    content:"on";
+    margin:0.01rem;
+
+}
+
+.experience-location{
+
+    opacity:0.4;
+
+}
+
+.experience-date .day,.month,.year {
+    opacity:0.4;
+}
+
+.experience-date-separator{
+    color:#F34423;
+}
