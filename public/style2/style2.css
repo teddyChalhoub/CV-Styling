@@ -1,296 +1,281 @@
-body{
-    width:100vw;
-    margin: auto;
-    max-width: 80%;
+body {
+  max-width: 80%;
+  margin: 2rem auto;
 }
 
-header h2, #about h3,.experience-institution{
-    display: none;
+header h2,
+#about h3,
+.experience-institution {
+  display: none;
+}
+
+hgroup {
+  margin-top: 3rem;
 }
 
 img {
-    position: absolute;
-    width:10.5rem;
-    height: 10.5rem;
-    right:14rem;
-    top:1rem;
-    transform: rotate(-15deg);
+  position: absolute;
+  width: 10.5rem;
+  height: 10.5rem;
+  right: 14rem;
+  top: 2rem;
+  transform: rotate(-15deg);
 }
 
-.content{
-    display: grid;
-    max-width: 95%;
+.content {
+  display: grid;
+  max-width: 95%;
 }
 
-.content h3{
-   
-    border-right: 0.1rem #000 solid;
-    /* text-align: center; */
-    grid-row: 1/3;
-    width:100%;
-    height: 100%;
+.content h3 {
+  border-right: 0.1rem #000 solid;
+  grid-row: 1/3;
+  width: 100%;
+  height: 100%;
 }
 
-#about{
-    border-top: 0.1rem solid rgb(0,0,0,0.2);
-
+#about {
+  border-top: 0.1rem solid rgb(0, 0, 0, 0.2);
 }
 
-#about p{
-
-    max-width: 75%;
-    opacity: 0.5;
-    grid-column: 1/3
+#about p {
+  max-width: 75%;
+  opacity: 0.5;
+  grid-column: 1/3;
+  text-align: justify;
 }
 
-.experience-type,.experience-date-separator{
-    color:#2D8180;
+.experience-type,
+.experience-date-separator {
+  color: #2d8180;
 }
 
-.experience-details{
+.experience-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience-location {
+  margin-right: 0.5rem;
+  opacity: 0.5;
+}
+
+.experience .day,
+.month,
+.year {
+  opacity: 0.5;
+}
+
+#competencies,
+#experiences,
+#education,
+#hobbies {
+  margin-top: 1rem;
+}
+
+#competencies {
+  display: grid;
+  grid-template-columns: 12% 80%;
+}
+
+.skills-primary {
+  display: grid;
+  grid-template-columns: 15% 15% 15%;
+  margin-top: 1rem;
+}
+
+.skills-secondary {
+  display: grid;
+  grid-template-columns: 15% 15% 15%;
+  grid-column: 2/3;
+}
+
+.skill span {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.skills-primary span {
+  background-color: #2d8180;
+  padding: 0.3rem;
+  margin: 0.5rem 0.5rem 0 0.5rem;
+}
+
+.skills-secondary span {
+  background-color: #2d8180;
+  padding: 0.3rem;
+  margin: 0.5rem 0.5rem 0.3rem 0.5rem;
+  font-size: 0.7rem;
+}
+
+.skills-primary .skill:first-child span::after {
+  content: "⋆⋆⋆";
+  color: #fff;
+}
+
+.skills-primary .skill:nth-child(2) span::after {
+  content: "⋆⋆";
+  color: #fff;
+}
+.skills-primary .skill:last-child span::after {
+  content: "⋆";
+  color: #fff;
+  font-weight: 600;
+}
+
+.skills-secondary .skill:first-child span::after {
+  content: "⋆⋆⋆⋆⋆";
+  color: #fff;
+}
+
+.skills-secondary .skill:nth-child(2) span::after {
+  content: "⋆⋆⋆";
+  color: #fff;
+}
+.skills-secondary .skill:last-child span::after {
+  content: "⋆⋆⋆⋆";
+  color: #fff;
+}
+
+#experiences {
+  display: grid;
+  grid-template-columns: 12% 80%;
+}
+
+#experiences .experience:last-child {
+  grid-column: 2/3;
+}
+
+#experiences .experience {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 0 0.5rem;
+}
+
+.experience-description {
+  max-width: 80%;
+  grid-column: 1/3;
+}
+
+#education {
+  display: grid;
+  grid-template-columns: 12% 80%;
+}
+
+#education .experience:last-child {
+  grid-column: 2/3;
+}
+
+#education .experience {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 0 0.5rem;
+}
+
+.experience-description {
+  grid-column: 1/3;
+}
+
+#hobbies {
+  display: grid;
+  grid-template-columns: 12% 80%;
+  margin-bottom: 3rem;
+}
+
+.contact {
+  display: grid;
+  flex-direction: row;
+  height: 1rem;
+}
+
+#contact h3,
+.contact-type,
+.contact-value {
+  display: none;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact::after {
+  margin: 1rem 2rem 0 0;
+}
+
+.contact-email::after {
+  background-image: url(./img/email.png);
+  background-size: 5rem 5rem;
+  width: 5rem;
+  height: 5rem;
+  content: "";
+}
+
+.contact-skype::after {
+  background-image: url(./img/phone.png);
+  background-size: 5rem 5rem;
+  width: 5rem;
+  height: 5rem;
+  content: "";
+}
+.contact-github::after {
+  background-image: url(./img/github.png);
+  background-size: 5rem 5rem;
+  display: inline;
+  width: 5rem;
+  height: 5rem;
+  content: "";
+}
+
+.contact-facebook::after {
+  background-image: url(./img/facebook.png);
+  background-size: 5rem 5rem;
+  width: 5rem;
+  height: 5rem;
+  content: "";
+}
+
+@media (max-width: 1174px) {
+  img {
+    display: none;
+  }
+
+  #competencies,
+  #education,
+  #experiences,
+  #hobbies {
+    display: block;
+  }
+
+  .skills-primary,
+  .skills-secondary {
+    grid-template-columns: 33.5% 33% 33.5%;
+  }
+
+  .content h3 {
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    justify-content: flex-start;
+    max-width: 7rem;
+    height: fit-content;
+    border-bottom: 0.1rem #000 solid;
+    border-right: 0;
+  }
 
-.experience-location{
-    margin-right: 0.5rem;
-    opacity:0.5;
-}
-
-.experience .day,.month,.year{
-    opacity:0.5;
-}
-
-#competencies ,#experiences ,#education,#hobbies{
-    margin-top:1rem;
-}
-
-#competencies{
-   display: grid;
-   grid-template-columns: 12% 80%;
-  
-}
-
-
-.skills-primary{
+  .contacts {
     display: grid;
-    grid-template-columns: 15% 15% 15%;
-    margin-top: 1rem;
+    grid-template-columns: 30% 30% 30%;
+  }
 
+  .contact-github {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+
+  .contact-facebook {
+    grid-column: 1/2;
+  }
 }
-
-.skills-secondary{
-    display: grid;
-    grid-template-columns: 15% 15% 15%;
-    grid-column: 2/3;
-}
-
-.skill span{
-    display: flex;
-    justify-content: space-between;
-    color:#fff;
-}
-
-.skills-primary span{
-    background-color: #2D8180;
-    padding: 0.3rem;
-    margin: 0.5rem 0.5rem 0 0.5rem;
-    
-}
-
-.skills-secondary span{
-    background-color: #2D8180;
-    padding: 0.3rem;
-    margin: 0.5rem 0.5rem 0.3rem 0.5rem;
-    font-size: 0.7rem;
-}
-
-
-.skills-primary .skill:first-child span::after{
-    content:"⋆⋆⋆";
-    color:#fff;
-    
-}
-
-.skills-primary .skill:nth-child(2) span::after{
-    content:"⋆⋆";
-    color:#fff;
-}
-.skills-primary .skill:last-child span::after{
-    content:"⋆";
-    color:#fff;
-    font-weight: 600;
-}
-
-.skills-secondary .skill:first-child span::after{
-    content:"⋆⋆⋆⋆⋆";
-    color:#fff;
-}
-
-.skills-secondary .skill:nth-child(2) span::after{
-    content:"⋆⋆⋆";
-    color:#fff;
-}
-.skills-secondary .skill:last-child span::after{
-    content:"⋆⋆⋆⋆";
-    color:#fff;
-}
-
-#experiences{
-    display: grid;
-    grid-template-columns: 12% 80%;
-
-   
- }
-
- #experiences .experience:last-child{
-     grid-column: 2/3;
-
- }
-
- #experiences .experience{
-     display: grid;
-     grid-template-columns: 12% 80%;
-     padding: 0 0.5rem;
- }
-
- .experience-description{
-     grid-column: 1/3;
- } 
-
- #education{
-    display: grid;
-    grid-template-columns: 12% 80%;
-  
-   
- }
-
- #education .experience:last-child{
-     grid-column: 2/3;
- }
-
- #education .experience{
-     display: grid;
-     grid-template-columns: 12% 80%;
-     padding: 0 0.5rem;
- }
-
- .experience-description{
-     grid-column: 1/3;
- } 
-
-
-#hobbies{
-    display: grid;
-    grid-template-columns: 12% 80%;
-    margin-bottom: 3rem;
-
- }
-
-.contact{
-    display: grid;
-    flex-direction: row;
-    height: 1rem;
-}
-
-#contact h3,.contact-type,.contact-value{
-     display: none;
- }
-
- .contacts{
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
-     align-items: center;
-     
- }
-
- .contact::after{
-     margin:1rem 2rem 0 0;
-     
- }
-
-
- .contact-email::after{
-    background-image: url(./img/email.png);
-    background-size: 5rem 5rem;
-    width: 5rem; 
-    height: 5rem;
-    content: "";
-
- }
-
- .contact-skype::after{
-    background-image: url(./img/phone.png);
-    background-size: 5rem 5rem;
-    width: 5rem; 
-    height: 5rem;
-    content: "";
-
-}
-.contact-github::after{
-    background-image: url(./img/github.png);
-    background-size: 5rem 5rem;
-    display: inline;
-    width: 5rem; 
-    height: 5rem;
-    content: "";
-}
-
-.contact-facebook::after{
-    background-image: url(./img/facebook.png);
-    background-size: 5rem 5rem;
-    width: 5rem; 
-    height: 5rem;
-    content: "";
-}
-
-@media(max-width:1174px){
-
-    img{
-        display: none;
-    }
-
-    #competencies,#education,#experiences,#hobbies{
-        display: block;
-    }
-
-    .skills-primary,.skills-secondary{
-      
-        grid-template-columns: 33.5% 33% 33.5%;
-       
-     }
-
-
-    .content h3{
-        display: flex;
-        justify-content: flex-start;
-        max-width:7rem;
-        height: fit-content;
-        border-bottom: 0.1rem #000 solid;
-        border-right:0;
-    }
-
-    .contacts{
-        display: grid;
-        grid-template-columns: 30% 30% 30%;
-
-
-    }
-
-    .contact-github{
-        grid-column: 3/4;
-        grid-row: 1/2;
-    }
-
-    .contact-facebook{
-        grid-column:1/2;
-    }
-
-
-
-}
-
-
-
